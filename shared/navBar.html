@@ -1,0 +1,64 @@
+<div class="navbar-wrapper">
+            <div class="container-fluid">
+                <nav class="navbar navbar-fixed-top">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="#">Green Koala</a>
+                            
+                        </div>
+                        <div id="navbar" class="navbar-collapse collapse">
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a href="#home" class="">Principal</a></li>
+                                
+                                    <li class=" dropdown"><a class="dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Meus dados<span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#recebidos">Tabelas</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class=" dropdown"><a class="dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Estimativas<span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#chart">Gráficos</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class=" dropdown"><a class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plantações<span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Alface</a></li>
+                                        </ul>
+                                    
+                            </ul>
+                            <ul class="nav navbar-nav pull-right">
+                                <li class=" dropdown"><a class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Minha conta<span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Mudar senha</a></li>
+                                            <li><a href="#">Configurações</a></li>
+                                        </ul>
+                                </li>
+                                <li class=""><a href="#">Sair</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+<script>
+    var toggle = false;
+    $("#menu-toggle").click(function(e){
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+        if(!toggle){
+            //$('#containerMenu').css({'margin-left': '0px'});
+            toggle = true;
+        }else{
+            //$('#containerMenu').css({'margin-left': '250px'});
+            toggle = false;
+        }
+    });
+
+</script>

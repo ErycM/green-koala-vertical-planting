@@ -1,0 +1,49 @@
+<!--<div class="row flex-center">
+    <div class="col-sm-6 col-md-6 col-lg-6">
+        <div class="panel panel-primary">
+
+            <div class="panel-heading">
+                <h4 class="text-center">Útimos dados recebidos - {{tb.updateDate}}<span class="glyphicon glyphicon-eye-open pull-right"></span></h4>
+            </div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>TEMPERATURA</th>
+                        <th>LUMINOSIDADE</th>
+                        <th>UMIDADE AR</th>
+                        <th>UMIDADE TERRA</th>
+                    </tr>
+                </thead>
+                <tr ng-repeat="value in tb.data">
+                    <td>{{ value.temperatura }}</td>
+                    <td>{{ value.luminosidade }}</td>
+                    <td>{{ value.umidade_ar }}</td>
+                    <td>{{ value.umidade_terra }}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</div> -->
+
+<div class="row wrapper flex-center">
+    <table id="acrylic">
+        <h2 style="text-align:center;margin-top: 8vh;">{{tb.updateDate}}</h2>
+        <thead>
+            <tr>
+                <th>TEMPERATURA</th>
+                <th>LUMINOSIDADE</th>
+                <th>UMIDADE AR</th>
+                <th>UMIDADE TERRA</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="value in tb.data | reverse | limitTo: 5 ">
+                <td data-label="temperatura">{{ value.temperatura }}</td>
+                <td data-label="luminosidade">{{ value.luminosidade }}</td>
+                <td data-label="umidade_ar">{{ value.umidade_ar }}</td>
+                <td data-label="umidade_terra">{{ value.umidade_terra }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

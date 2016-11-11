@@ -1,0 +1,26 @@
+<div class="flex-center">
+    <div class="row" style="margin: 10%;">
+        
+        <div class="col-sm-12 col-md-6 col-lg-6">
+            <div class="animateWrite">
+                <div class="introduction">
+            </div>
+            </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-6 box-planing">
+            <div class="icon" ng-include="'svg/GreenKoala2.svg'">  </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function(){
+        $(".introduction").typed({
+            strings: ["Bem vindo!", "Aqui você pode gerenciar a sua plantação..", "Navegue pelo menu superior e busque o que desejar :D", "Não achou o que procurava?", 'Entre em contato conosco clicando <a href="#recebidos">aqui</a>!'],
+            typeSpeed: 4,
+            backDelay: 1500,
+            showCursor: false
+        });
+    });
+</script>
